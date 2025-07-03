@@ -24,8 +24,8 @@ nav:
     - Basic Usage: user_guide/basic_usage.md
     - Linting and Testing: user_guide/linting_testing.md
     - FAQ: user_guide/faq.md
+  - Code Reference: reference/
   - Other:
-    - API Reference: reference/
     - Contributing: about/contributing.md
 
 markdown_extensions:

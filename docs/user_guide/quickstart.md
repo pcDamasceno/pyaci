@@ -4,7 +4,7 @@
 ## Installation
 
 In most cases installation via pip is the simplest and best way to install scrapli.
-See [here](user_guide/installation) for advanced installation details.
+See [here]() for advanced installation details.
 
 ```
 pip install scrapli
