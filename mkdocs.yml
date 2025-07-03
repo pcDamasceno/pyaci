@@ -1,0 +1,62 @@
+---
+site_name: PyACI
+site_description: Fast, flexible, sync/async, Python 3.7+ screen scraping client specifically for network devices
+site_author: Pedro Damasceno
+site_url: https://carlmontanari.github.io/
+
+repo_name: pcDamasceno/pyaci
+repo_url: https://github.com/pcDamasceno/pyaci
+edit_uri: ''
+
+theme:
+    name: material
+    palette:
+      primary: 'black'
+      accent: 'teal'
+    icon:
+      repo: fontawesome/brands/github-alt
+
+nav:
+  - PyACI: index.md
+  - User Guide:
+    - Quick Start Guide: user_guide/quickstart.md
+    - Installation: user_guide/installation.md
+    - Basic Usage: user_guide/basic_usage.md
+    - Linting and Testing: user_guide/linting_testing.md
+    - FAQ: user_guide/faq.md
+  - Other:
+    - API Reference: reference/
+    - Contributing: about/contributing.md
+
+markdown_extensions:
+    - toc:
+        permalink: True
+    - admonition
+    - codehilite
+    - extra
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        use_pygments: True
+        linenums: True
+
+extra:
+    social:
+        - icon: fontawesome/brands/github-alt
+          link: 'https://github.com/pcDamasceno/'
+        - icon: fontawesome/brands/linkedin
+          link: 'https://www.linkedin.com/in/pcdamasceno/'
+plugins:
+    - search
+    - gen-files:
+        scripts:
+        - docs/generate.py
+    - mkdocstrings:
+        handlers:
+          python:
+            paths: [ pyaci ]
+            options:
+              show_signature_annotations: true
+    - section-index
+    - literate-nav:
+        nav_file: SUMMARY.md
+
